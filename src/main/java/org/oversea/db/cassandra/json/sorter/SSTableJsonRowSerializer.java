@@ -11,7 +11,6 @@ import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.JsonToken;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
-import org.geirove.exmeso.ExternalMergeSort;
 /**
  * 
  * @author hungnt.it@gmail.com
@@ -50,7 +49,7 @@ public class SSTableJsonRowSerializer<T>  implements ExternalJsonMergeSort.Seria
         }
         jsonGenerator.writeRaw("\n]");
         jsonGenerator.close();
-        if (ExternalMergeSort.debug) {
+        if (ExternalJsonMergeSort.debug) {
             System.out.println("W: " + (System.currentTimeMillis() - st) + "ms");
         }
     }

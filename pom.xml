@@ -5,11 +5,6 @@
 	<artifactId>cassandra-tool</artifactId>
 	<version>0.1</version>
 	<dependencies>
-  	<dependency>
-  		<groupId>org.geirove.exmeso</groupId>
-  		<artifactId>exmeso-core</artifactId>
-  		<version>0.0.5</version>
-  	</dependency>
 
 
 		<dependency>
